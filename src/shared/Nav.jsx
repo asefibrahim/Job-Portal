@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from '../assets/logo.svg'
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
@@ -12,23 +12,9 @@ export const Nav = () => {
                         title="Company"
                         class="inline-flex items-center"
                     >
-                        <svg
-                            class="w-8 text-teal-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                        >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                            Company
+                        <img className="h-12 w-12" src={logo} alt="" />
+                        <span class="ml-2 text-2xl font-extrabold tracking-wide bg-gradient-to-r from-orange-400 to-red-700 text-transparent bg-clip-text ">
+                            RustJobs
                         </span>
                     </a>
                     <ul class="flex items-center hidden space-x-8 lg:flex">
@@ -37,9 +23,9 @@ export const Nav = () => {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium ml-16 tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                Product
+                                Hiring Solutions
                             </a>
                         </li>
                         <li>
@@ -49,7 +35,7 @@ export const Nav = () => {
                                 title="Our product"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                Features
+                                About us
                             </a>
                         </li>
                         <li>
@@ -59,7 +45,7 @@ export const Nav = () => {
                                 title="Product pricing"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                Pricing
+                                Blog
                             </a>
                         </li>
                         <li>
@@ -69,11 +55,11 @@ export const Nav = () => {
                                 title="About us"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                About us
+                                Companies
                             </a>
                         </li>
                     </ul>
-                    <ul class="flex items-center hidden space-x-8 lg:flex">
+                    <ul class="flex items-center hidden space-r-8 lg:flex">
                         <li>
                             <a
                                 href="/"
@@ -81,10 +67,24 @@ export const Nav = () => {
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
-                                Sign up
+                                Post a Job
                             </a>
                         </li>
+                        <li>
+                            <button
+
+                                class="inline-flex items-center justify-center h-10 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-500
+                                
+                                hover:bg-red-700
+                                 focus:shadow-outline focus:outline-none"
+
+
+                            >
+                                Start Hiring
+                            </button>
+                        </li>
                     </ul>
+
                     <div class="lg:hidden">
                         <button
                             aria-label="Open Menu"
@@ -217,3 +217,5 @@ export const Nav = () => {
         </div>
     );
 };
+
+export default Nav
