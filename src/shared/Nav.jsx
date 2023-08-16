@@ -23,7 +23,7 @@ export const Nav = () => {
                                 href="/"
                                 aria-label="Our product"
                                 title="Our product"
-                                class="font-medium ml-16 tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                class="font-medium ml-16 tracking-wide  text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Hiring Solutions
                             </a>

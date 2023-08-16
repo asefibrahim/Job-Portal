@@ -1,9 +1,12 @@
 import React from 'react';
+import JobsSection from './homeChild/jobsSection/JobsSection';
+import CompaniesSection from './homeChild/CompaniesSection/CompaniesSection';
 
 const MainHome = () => {
     return (
         <div>
-            <h1>Hello</h1>
+            <JobsSection />
+            <CompaniesSection />
         </div>
     );
 };
