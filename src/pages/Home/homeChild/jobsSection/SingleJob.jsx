@@ -11,27 +11,29 @@ const SingleJob = ({ singleJob }) => {
                 <div class="flex flex-col ">
 
                     <div className={`${singleJob?.status ? 'bg-gradient-to-r from-sky-950 to-cyan-900  border-4 border-red-500' : 'bg-gray-900'}  p-6 rounded shadow-md md:flex  justify-between items-center mb-4`}>
+
+
+
+
                         <div className='space-y-3 text-white'>
-                            <div className='flex items-center gap-3 overflow-x-scroll md:overflow-x-auto '>
-                                <span class="text-gray-800 font-semibold bg-cyan-500 px-3 py-1 rounded-full ">
-                                    <span className=''>
-                                        {jobType}
-                                    </span>
-                                </span>
-
-                                {singleJob?.status && <span class="text-gray-800 font-semibold bg-yellow-500 px-3 py-1 rounded-full ">
-                                    <span className='flex items-center gap-2'>
-                                        <FaRegStar /> <span>Featured Company</span>
-                                    </span>
-                                </span>}
-                                {singleJob?.status && (<span class="text-gray-800 font-semibold bg-red-500 px-3 py-1 rounded-full ">
-                                    <span className='flex items-center gap-2'>
-                                        <FaRegHeart /> <span>Featured Company</span>
-                                    </span>
-                                </span>)}
 
 
-                            </div>
+
+                            <div class="flex-shrink-0 flex -ml-2 py-4 overflow-x-auto">
+                                <span class="px-2 py-1 flex-shrink-0 leading-5 font-semibold rounded-full bg-teal-300 text-teal-900">{jobType}</span>
+                                {singleJob.status && <a class="inline-flex gap-1 items-center flex-shrink-0 leading-5 px-2 py-1 font-semibold rounded-full bg-yellow-300 hover:bg-yellow-200 text-yellow-900 ml-2">
+                                    <FaRegStar />
+
+                                    <span>Featured Company</span>
+                                </a>}
+                                {singleJob.status && <a class="inline-flex items-center  flex-shrink-0 gap-1 leading-5 px-2 py-1 font-semibold rounded-full bg-red-500 hover:bg-red-400 text-red-900 ml-2">
+                                    <FaRegHeart />
+                                    <span>Community Sponsor</span>
+                                </a>}</div>
+
+
+
+
                             <h2 class="text-2xl text-red-400 font-bold mt-2">{title}</h2>
                             <div class="text-gray-300 mt-2 md:flex items-center">
                                 <img src={companyImageUrl} alt="Company Logo" class="w-6 h-6 mr-2" />

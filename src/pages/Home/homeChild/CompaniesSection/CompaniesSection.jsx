@@ -93,7 +93,7 @@ const CompaniesSection = () => {
 
 
             <div className=''>
-                <div className="bg-gradient-to-r h-56 from-sky-950 to-cyan-900    p-6 rounded shadow-md md:flex  justify-between items-center mb-4">
+                <div className="bg-gradient-to-r h-56 from-sky-950 to-cyan-900    p-6 rounded-lg shadow-md md:flex  justify-between items-center mb-4">
 
 
 

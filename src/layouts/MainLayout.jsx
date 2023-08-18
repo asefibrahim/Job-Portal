@@ -8,7 +8,7 @@ import Footer from '../shared/Footer';
 const MainLayout = () => {
 
     return (
-        <div className='blogs'>
+        <div className='blogs '>
             <Nav ></Nav>
             <Outlet></Outlet>
             <Footer></Footer>

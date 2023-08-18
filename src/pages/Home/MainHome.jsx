@@ -1,12 +1,16 @@
 import React from 'react';
 import JobsSection from './homeChild/jobsSection/JobsSection';
 import CompaniesSection from './homeChild/CompaniesSection/CompaniesSection';
+import Loading from '../../components/Loading';
+import MoreJobs from './homeChild/MoreJobs/MoreJobs';
 
 const MainHome = () => {
     return (
-        <div>
+        <div className='bg-gray-100'>
             <JobsSection />
             <CompaniesSection />
+            <MoreJobs />
+
         </div>
     );
 };

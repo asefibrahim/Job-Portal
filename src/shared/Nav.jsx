@@ -1,13 +1,14 @@
 import { useState } from "react";
 import logo from '../assets/logo.svg'
+import { Link } from "react-router-dom";
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <div class="bg-gray-900">
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div class="relative flex items-center justify-between">
-                    <a
-                        href="/"
+                    <Link
+                        to='/'
                         aria-label="Company"
                         title="Company"
                         class="inline-flex items-center"
@@ -16,37 +17,38 @@ export const Nav = () => {
                         <span class="ml-2 text-2xl font-extrabold tracking-wide bg-gradient-to-r from-orange-400 to-red-700 text-transparent bg-clip-text ">
                             RustJobs
                         </span>
-                    </a>
+                    </Link>
                     <ul class="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <a
-                                href="/"
+                            <Link
+                                to='/hiring-solution'
+
                                 aria-label="Our product"
                                 title="Our product"
                                 class="font-medium ml-16 tracking-wide  text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Hiring Solutions
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="/"
-                                aria-label="Our product"
-                                title="Our product"
+                            <Link
+                                to="/about"
+                                aria-label="Product pricing"
+                                title="Product pricing"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
-                                About us
-                            </a>
+                                About Us
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="/"
+                            <Link
+                                to="/about"
                                 aria-label="Product pricing"
                                 title="Product pricing"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Blog
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a
