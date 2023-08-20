@@ -1,8 +1,14 @@
 import React from 'react';
 import { FaCalendarWeek, FaGrinHearts, FaHeart, FaRegHeart, FaRegStar, FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-const SingleJob = ({ singleJob }) => {
+import Loading from '../../../../components/Loading';
+const SingleJob = ({ singleJob, loading }) => {
     const { id, jobType, title, salary, city, country, daysPosted, company, companyImageUrl } = singleJob
+
+    if (loading) {
+        return <Loading size={8} />
+    }
+
 
     return (
         <div class=" px-4 mt-1 ">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegHeart, FaRegStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CompaniesSection = () => {
     return (
@@ -32,8 +33,12 @@ const CompaniesSection = () => {
 
                         <div class="text-gray-300 mt-2 md:flex items-center">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABwElEQVRYw+2WPUtjURCGn0kifrCYW6idjWAhLIu7ha4WtmKlrdorK+gakbXYP2Enhq0s/AE226wgCGqlRFBLJSHq+hGzerOJ+bhjE4PoTXITJTb3LecMM8+cM2fOEWPMVF5qExiKr35I4ECLO7kJYJkKpao3Ht5ZLoAL4AK8O4AvP3Seax/IVRDnvEiccrrzdX3KLtgs3NY3iMfb968HaCg1zIAT4DewXgWA+hqbWLNZ2AGdB1kB2ksE2AMmZ796I0CmqiMQkRYbuz/fH41AU5E5HgK+i8hhzZtQVY+AKRHZXZ/2a00BVPUYmLVybL82ecUAqpwBM4j+2QgY+lbX0JHS9xANi3kT85yrJVrTQZROQ+REiF1Jp1oSBP1ijJlSE4BsBk7DQjwmgAB8Bn6B9r4FREmAbBZOI8L1ZSF5XtINBEEHjNE7eW0PhG3sf1NJMhdnEr26eJ68AOFH9ScQB0LVAsj4ivnRxp44ONJoOEKrZUm5Rr1FSQD1DvIl80XXPV4sWdrKbNk4hoDAt/66lJMqjFFzBPhRxi0FzAGDwHDhMRLoszt+wOt8H2nDPs5T/QeagY4nvu633AVwAVwAHgDHSZMtya7rSAAAAABJRU5ErkJggg==" alt="Company Logo" class="w-10 h-10 mr-2" />
-                            <p className='  pr-3 text-3xl font-bold text-red-400'>  Keyrock    </p>
+                          <Link to="/companies">
 
+                          <p className='  pr-3 text-3xl font-bold text-red-400'>  Keyrock    </p>
+
+
+                          </Link>
 
                         </div>
                         <p class="mt-2 flex items-center justify-start gap-2">
@@ -71,8 +76,10 @@ const CompaniesSection = () => {
 
                         <div class="text-gray-300 mt-2 md:flex items-center">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABwElEQVRYw+2WPUtjURCGn0kifrCYW6idjWAhLIu7ha4WtmKlrdorK+gakbXYP2Enhq0s/AE226wgCGqlRFBLJSHq+hGzerOJ+bhjE4PoTXITJTb3LecMM8+cM2fOEWPMVF5qExiKr35I4ECLO7kJYJkKpao3Ht5ZLoAL4AK8O4AvP3Seax/IVRDnvEiccrrzdX3KLtgs3NY3iMfb968HaCg1zIAT4DewXgWA+hqbWLNZ2AGdB1kB2ksE2AMmZ796I0CmqiMQkRYbuz/fH41AU5E5HgK+i8hhzZtQVY+AKRHZXZ/2a00BVPUYmLVybL82ecUAqpwBM4j+2QgY+lbX0JHS9xANi3kT85yrJVrTQZROQ+REiF1Jp1oSBP1ijJlSE4BsBk7DQjwmgAB8Bn6B9r4FREmAbBZOI8L1ZSF5XtINBEEHjNE7eW0PhG3sf1NJMhdnEr26eJ68AOFH9ScQB0LVAsj4ivnRxp44ONJoOEKrZUm5Rr1FSQD1DvIl80XXPV4sWdrKbNk4hoDAt/66lJMqjFFzBPhRxi0FzAGDwHDhMRLoszt+wOt8H2nDPs5T/QeagY4nvu633AVwAVwAHgDHSZMtya7rSAAAAABJRU5ErkJggg==" alt="Company Logo" class="w-10 h-10 mr-2" />
+                            <Link to="/companies">
+                            
                             <p className='  pr-3 text-3xl font-bold'> Bloop   </p>
-
+                            </Link>
 
                         </div>
                         <p class="mt-2 flex items-center justify-start gap-2">

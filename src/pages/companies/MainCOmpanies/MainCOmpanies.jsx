@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import SingleJob from './SingleJob';
-import Loading from '../../../../components/Loading';
+import CompaniesSection from '../../Home/homeChild/CompaniesSection/CompaniesSection';
+import SingleJob from '../../Home/homeChild/jobsSection/SingleJob';
+import Loading from '../../../components/Loading';
 
-const JobsSection = () => {
+const MainCOmpanies = () => {
+
+
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
-                setData(data.slice(0, 8));
+                setData(data.slice(3, 6));
                 setLoading(false); // Set loading state to false after data is fetched
             })
             .catch(error => {
@@ -18,23 +21,20 @@ const JobsSection = () => {
             });
     }, []);
 
-    
-  
+
 
     return (
         <div>
+            <CompaniesSection/>
 
 
-
-            <div className='text-center pt-8 mb-5'>
-                <span class="ml-2 text-4xl  font-extrabold tracking-wide bg-gradient-to-r from-orange-500 to-red-600 text-transparent bg-clip-text ">
-                    Featured Rust Jobs
-                </span>
-            </div>
+<div className='text-center font-extrabold text-4xl my-12 text-red-500'>
+    Jobs 
+</div>
 
 
             <div>
-                {loading?<Loading size={8}/>:
+                {loading?<Loading size={3}/>:
                     data.map(singleJob => <SingleJob key={singleJob.id}  singleJob={singleJob} />)
                 }
 
@@ -44,19 +44,14 @@ const JobsSection = () => {
 
             </div>
 
+<div>
 
 
 
-
-
-
-
+</div>
 
         </div>
-
-
-
     );
 };
 
-export default JobsSection;
+export default MainCOmpanies;

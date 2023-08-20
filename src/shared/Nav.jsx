@@ -42,7 +42,7 @@ export const Nav = () => {
                         </li>
                         <li>
                             <Link
-                                to="/about"
+                                to="/blogs"
                                 aria-label="Product pricing"
                                 title="Product pricing"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -51,26 +51,26 @@ export const Nav = () => {
                             </Link>
                         </li>
                         <li>
-                            <a
-                                href="/"
+                            <Link
+                                to="/companies"
                                 aria-label="About us"
                                 title="About us"
                                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Companies
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <ul class="flex items-center hidden space-r-8 lg:flex">
                         <li>
-                            <a
-                                href="/"
+                            <Link
+                                to="/postJob"
                                 class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
                                 Post a Job
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <button
@@ -114,31 +114,17 @@ export const Nav = () => {
                                 <div class="p-5 bg-white border rounded shadow-sm">
                                     <div class="flex items-center justify-between mb-4">
                                         <div>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to='/'
                                                 aria-label="Company"
                                                 title="Company"
                                                 class="inline-flex items-center"
                                             >
-                                                <svg
-                                                    class="w-8 text-deep-purple-accent-400"
-                                                    viewBox="0 0 24 24"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    strokeLinecap="round"
-                                                    strokeMiterlimit="10"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                >
-                                                    <rect x="3" y="1" width="7" height="12" />
-                                                    <rect x="3" y="17" width="7" height="6" />
-                                                    <rect x="14" y="1" width="7" height="6" />
-                                                    <rect x="14" y="11" width="7" height="12" />
-                                                </svg>
-                                                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    Company
+                                                <img className="h-12 w-12" src={logo} alt="" />
+                                                <span class="ml-2 text-2xl font-extrabold tracking-wide bg-gradient-to-r from-orange-400 to-red-700 text-transparent bg-clip-text ">
+                                                    RustJobs
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div>
                                             <button
@@ -159,54 +145,58 @@ export const Nav = () => {
                                     <nav>
                                         <ul class="space-y-4">
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <Link
+                                                    to="/"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    Product
-                                                </a>
+                                                    Hiring Solutions
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/"
+                                                <Link
+                                                    to="/about"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    Features
-                                                </a>
+                                                    About Us
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/"
-                                                    aria-label="Product pricing"
-                                                    title="Product pricing"
+                                                <Link
+                                                    to="/blogs"
+                                                    aria-label="Our product"
+                                                    title="Our product"
                                                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    Pricing
-                                                </a>
+                                                    Blogs
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/"
-                                                    aria-label="About us"
-                                                    title="About us"
+                                                <Link
+                                                    to="/about"
+                                                    aria-label="Our product"
+                                                    title="Our product"
                                                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    About us
-                                                </a>
+                                                    Companies
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/"
-                                                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+
+
+
+
+                                                <Link
+                                                    to="/"
+                                                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-500 hover:bg-red-700 focus:shadow-outline focus:outline-none"
                                                     aria-label="Sign up"
                                                     title="Sign up"
                                                 >
-                                                    Sign up
-                                                </a>
+                                                    Start Hiring
+                                                </Link>
                                             </li>
                                         </ul>
                                     </nav>
