@@ -8,7 +8,7 @@ import MainPostJob from "../pages/postJob/MainPostJob";
 import MainCOmpanies from "../pages/companies/MainCOmpanies/MainCOmpanies";
 import ErrorPage from "../shared/ErrorPage";
 
-// jhfsdouijedg
+
 const router = createBrowserRouter([
     {
         path: "/",
