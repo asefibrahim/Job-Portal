@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useRouteError } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 
 
 const ErrorPage = () => {
-    const { error, status } = useRouteError()
+   
     return (
         <div>
             <div class="flex flex-col h-screen bg-black">
@@ -16,10 +16,10 @@ const ErrorPage = () => {
                 <div class="flex items-center justify-center flex-1">
                     <div class="max-w-xl px-4 py-8 mx-auto text-center">
                         <h2 className='mb-8 font-extrabold text-9xl text-gray-300'>
-                            <span className='sr-only'>Error</span> {status || 404}
+                           
                         </h2>
                         <h1 class="text-2xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-                            {error?.message}
+                          
                         </h1>
 
                         <p class="mt-4 text-gray-300">

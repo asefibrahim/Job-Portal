@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
-        errorElement: <ErrorPage></ErrorPage>,
+       
         children: [
             {
                 path: '/',
@@ -44,8 +44,17 @@ const router = createBrowserRouter([
                 element: <MainCOmpanies/>
 
             },
+
+            {
+                // This wildcard route captures any unmatched paths and renders the ErrorPage component
+                path: '*',
+                element: <ErrorPage />
+            }
         ]
+
     },
+  
+
 ])
 
 export default router

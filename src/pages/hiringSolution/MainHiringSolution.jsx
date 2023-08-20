@@ -4,7 +4,7 @@ import Sponsors from './HiringChild/Sponsors/Sponsors';
 import Pricing from './HiringChild/Pricing/Pricing';
 import Platform from './HiringChild/Platform/Platform';
 
-import Trusted from './HiringChild/TrustCompanies/trust';
+import Trusted from './HiringChild/TrustCompanies/Trusted';
 import Team from './HiringChild/Team/Team';
 import Community from './Community/Community';
 
