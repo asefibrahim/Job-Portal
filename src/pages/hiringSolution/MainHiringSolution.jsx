@@ -7,7 +7,7 @@ import Platform from './HiringChild/Platform/Platform';
 
 import Team from './HiringChild/Team/Team';
 import Community from './Community/Community';
-import TrustCompanies from './HiringChild/TrustCompanies/TrustCompanies';
+
 
 const MainHiringSolution = () => {
     return (
@@ -16,7 +16,7 @@ const MainHiringSolution = () => {
             <Sponsors />
             <Pricing />
             <Platform />
-           <TrustCompanies/>
+          
             <Team />
             <Community />
         </div>
