@@ -8,53 +8,42 @@ import MainPostJob from "../pages/postJob/MainPostJob";
 import MainCOmpanies from "../pages/companies/MainCOmpanies/MainCOmpanies";
 import ErrorPage from "../shared/ErrorPage";
 
-
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <MainLayout />,
+
+    children: [
+      {
         path: "/",
-        element: <MainLayout />,
-       
-        children: [
-            {
-                path: '/',
-                element: <MainHome />
-            },
-            {
-                path: '/hiring-solution',
-                element: <MainHiringSolution />
+        element: <MainHome />,
+      },
+      {
+        path: "/hiring-solution",
+        element: <MainHiringSolution />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/postJob",
+        element: <MainPostJob />,
+      },
+      {
+        path: "/companies",
+        element: <MainCOmpanies />,
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
+]);
 
-            },
-            {
-                path: '/about',
-                element: <About />
-
-            },
-            {
-                path: '/blogs',
-                element: <Blogs />
-
-            },
-            {
-                path: '/postJob',
-                element: <MainPostJob />
-
-            },
-            {
-                path: '/companies',
-                element: <MainCOmpanies/>
-
-            },
-
-            {
-                // This wildcard route captures any unmatched paths and renders the ErrorPage component
-                path: '*',
-                element: <ErrorPage />
-            }
-        ]
-
-    },
-  
-
-])
-
-export default router
+export default router;

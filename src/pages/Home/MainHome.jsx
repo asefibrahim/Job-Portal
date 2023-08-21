@@ -1,7 +1,7 @@
 import React from 'react';
 import JobsSection from './homeChild/jobsSection/JobsSection';
 import CompaniesSection from './homeChild/CompaniesSection/CompaniesSection';
-import Loading from '../../components/Loading';
+
 import MoreJobs from './homeChild/MoreJobs/MoreJobs';
 
 const MainHome = () => {

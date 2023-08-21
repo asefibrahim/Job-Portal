@@ -1,19 +1,38 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
-    return (
-        <div>
-
-
-
-            <div class="bg-white">
-                <div class="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
-                    <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-                        <div class="space-y-5 sm:space-y-4">
-                            <h1 class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl">About us</h1>
-                            <p class="text-xl leading-7 text-gray-500">RustJobs.dev is the go-to hiring platform for Rust Engineering Talent.<br /><br />We reach tens of thousands of Rust Engineers through our website, social media channels and recruitment network every month.<br /><br />We provide Recruitment, Team Extension and Job Board services in the Rust Engineering space.<br /><br />Reach out at <a href="mailto:hello@RustJobs.dev" class="font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150">hello@RustJobs.dev</a> to find out how we can help you with your Rust hiring needs!</p>
-                        </div>
-                        <div class="lg:col-span-2">
+  return (
+    <div>
+      <div class="bg-white">
+        <div class="mx-auto py-12 px-4 max-w-screen-xl sm:px-6 lg:px-8 lg:py-24">
+          <div class="space-y-5 sm:space-y-4">
+            <h1 class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl text-center">
+              About us
+            </h1>
+            <p class="text-xl leading-5 text-center text-gray-500">
+              RustJobs.dev is the go-to hiring platform for Rust Engineering
+              Talent.
+              <br />
+              <br />
+              We reach tens of thousands of Rust Engineers through our website,
+              social media channels and recruitment network every month.
+              <br />
+              <br />
+              We provide Recruitment, Team Extension and Job Board services in
+              the Rust Engineering space.
+              <br />
+              <br />
+              Reach out at{" "}
+              <a
+                href="mailto:hello@RustJobs.dev"
+                class="font-semibold text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
+              >
+                hello@RustJobs.dev
+              </a>{" "}
+              to find out how we can help you with your Rust hiring needs!
+            </p>
+          </div>
+          {/* <div class="lg:col-span-2">
                             <ul class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
                                 <li class="sm:py-8">
                                     <div class="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
@@ -138,17 +157,11 @@ const About = () => {
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
+                        </div> */}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default About;

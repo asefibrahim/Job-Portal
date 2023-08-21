@@ -8,7 +8,7 @@ const TrustCompanies = () => {
 <div class="bg-gray pt-12">
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">Trusted by over 100 companies globally</h2><p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">We helped over  hundred companies hire Rust Engineers all over the world</p>
+            <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">Trusted by over 100 companies globally</h2><p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">We helped over a hundred companies hire Rust Engineers all over the world</p>
             </div>
             </div>
             <div class="mt-10 pb-12 bg-gray sm:pb-16">
