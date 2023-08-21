@@ -6,7 +6,8 @@ import About from "../pages/about/About";
 import Blogs from "../pages/blogs/Blogs";
 import MainPostJob from "../pages/postJob/MainPostJob";
 import MainCOmpanies from "../pages/companies/MainCOmpanies/MainCOmpanies";
-import ErrorPage from "../shared/ErrorPage";
+
+import ErrorElement from "../shared/ErrorElement";
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <ErrorPage />,
+    element: <ErrorElement />,
   },
 ]);
 
