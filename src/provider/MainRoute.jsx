@@ -8,6 +8,7 @@ import MainPostJob from "../pages/postJob/MainPostJob";
 import MainCOmpanies from "../pages/companies/MainCOmpanies/MainCOmpanies";
 
 import ErrorElement from "../shared/ErrorElement";
+import JobDetails from "../pages/jobDetails/Jobdetails";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/companies",
         element: <MainCOmpanies />,
+      },
+      {
+        path: "/jobDetails/:id",
+        element: <JobDetails />,
       },
     ],
   },

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { ProfileCard } from "./aboutChild/ProfileCard";
 const About = () => {
   return (
     <div>
@@ -32,6 +33,11 @@ const About = () => {
               to find out how we can help you with your Rust hiring needs!
             </p>
           </div>
+
+          <div className="">
+            <ProfileCard />
+          </div>
+
           {/* <div class="lg:col-span-2">
                             <ul class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0">
                                 <li class="sm:py-8">
