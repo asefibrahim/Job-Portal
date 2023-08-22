@@ -237,7 +237,7 @@ const JobDetails = () => {
             </p>
             <h3 className="text-2xl font-bold">Accountability</h3>
             <p>
-              “Accountability at work. It means showing up and setting out to
+              “Accountability work. It means showing up and setting out to
               accomplish the things you’d said you’d do. It’s about taking
               personal responsibility for your work. It’s also trusting in your
               teammates and knowing you can count on each other to get things
